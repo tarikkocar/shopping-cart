@@ -2,7 +2,7 @@ import plants from "../constants/plants";
 
 export default function ProductDetails() {
   return (
-    <div className="p-8 w-1/2 flex flex-col items-start gap-6">
+    <div className="p-8 w-1/2 flex flex-col items-start gap-6 max-[800px]:w-full">
       <div className="pb-2 w-full flex flex-col gap-2 border-b-2 border-b-slate-400">
         <h1 className="text-3xl text-teal-700">{plants[0].title}</h1>
         <p className="text-lg font-bold text-slate-800">{`$${plants[0].price}`}</p>
@@ -30,7 +30,7 @@ export default function ProductDetails() {
           max="10"
         ></input>
       </div>
-      <button className="mt-2 w-1/2 py-2 border-2 border-teal-800 rounded-lg text-teal-50 bg-teal-800 hover:bg-teal-900 active:bg-teal-800">
+      <button className="mt-2 w-1/2 p-2 border-2 border-teal-800 rounded-lg text-teal-50 bg-teal-800 hover:bg-teal-900 active:bg-teal-800 transition-all">
         ADD TO CART
       </button>
     </div>

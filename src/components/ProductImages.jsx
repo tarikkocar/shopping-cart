@@ -5,8 +5,12 @@ export default function ProductImages() {
   const [displayedImage, setDisplayedImage] = useState(1);
 
   return (
-    <div className="p-8 w-1/2 flex flex-col items-center gap-6">
-      <img className="w-full" src={plants[0][`img_${displayedImage}`]} alt="" />
+    <div className="p-8 w-1/2 flex flex-col items-center gap-6 max-[800px]:w-full">
+      <img
+        className="w-full"
+        src={plants[0][`img_${displayedImage}`]}
+        alt={`${plants[0].title} image ${displayedImage}`}
+      />
       <div className="flex gap-4">
         <button
           className={`w-20 ${
