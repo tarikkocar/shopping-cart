@@ -2,14 +2,14 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProductPage from "./pages/ProductPage";
-import ProductCard from "./components/ProductCard";
+import ListingPage from "./pages/ListingPage";
 
 function App() {
   return (
     <div className="flex flex-col items-center gap-2 w-full">
       <Header />
       {/* <ProductPage /> */}
-      <ProductCard />
+      <ListingPage />
       <Footer />
     </div>
   );

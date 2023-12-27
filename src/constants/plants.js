@@ -15,8 +15,8 @@ const plants = [
   },
   {
     title: "Peace Lily",
-    img_1: "/assets/peace_lily_1.jpg",
-    img_2: "/assets/peace_lily_2.jpg",
+    img_1: "/assets/peace_lily_1.png",
+    img_2: "/assets/peace_lily_2.png",
     petSafe: false,
     easyCare: true,
     succulent: false,
@@ -226,7 +226,7 @@ const plants = [
   {
     title: "Haworthia",
     img_1: "/assets/haworthia_1.jpg",
-    img_2: "/assets/haworthia_2.jpg",
+    img_2: "/assets/haworthia_2.png",
     petSafe: true,
     easyCare: true,
     succulent: true,
@@ -268,7 +268,7 @@ const plants = [
   {
     title: "Bamboo Palm",
     img_1: "/assets/bamboo_palm_1.jpg",
-    img_2: "/assets/bamboo_palm_2.jpg",
+    img_2: "/assets/bamboo_palm_2.png",
     petSafe: true,
     easyCare: false,
     succulent: false,
