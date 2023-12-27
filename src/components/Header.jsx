@@ -15,12 +15,22 @@ export default function Header() {
           </span>
         </div>
       </div>
-      <div className="w-screen p-5 h-1/4 bg-teal-800 flex gap-8 justify-center items-center text-sm text-teal-50">
-        <p>EASY TO CARE PLANTS</p>
-        <p>PET-SAFE PLANTS</p>
-        <p>SUCCULENTS</p>
-        <p>PALMS</p>
-        <p></p>
+      <div className="w-full p-5 h-1/4 bg-teal-800 flex gap-8 justify-center items-center text-sm text-teal-50">
+        <p className="hover:text-teal-200 transition-all cursor-pointer">
+          EASY TO CARE PLANTS
+        </p>
+        <p className="hover:text-teal-200 transition-all cursor-pointer">
+          PET-SAFE PLANTS
+        </p>
+        <p className="hover:text-teal-200 transition-all cursor-pointer">
+          SUCCULENTS
+        </p>
+        <p className="hover:text-teal-200 transition-all cursor-pointer">
+          PALMS
+        </p>
+        <p className="hover:text-teal-200 transition-all cursor-pointer">
+          ALL HOUSEPLANTS
+        </p>
       </div>
     </div>
   );
