@@ -1,15 +1,19 @@
-import { useState } from "react";
+import { useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import ProductPage from "./pages/ProductPage";
-import ListingPage from "./pages/ListingPage";
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="flex flex-col items-center gap-2 w-full">
       <Header />
-      {/* <ProductPage /> */}
-      <ListingPage />
+      <Outlet />
       <Footer />
     </div>
   );

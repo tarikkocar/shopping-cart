@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="w-full flex justify-center text-slate-800">
-        <div className="p-12 px-60 w-full max-w-[100rem] flex max-[1100px]:flex-col max-[1100px]:px-20">
+        <div className="p-12 px-60 w-full max-w-[100rem] flex max-[1100px]:flex-col max-[1100px]:px-8">
           <div className="w-full flex gap-16 max-[1100px]:justify-center">
             <ul className="flex flex-col gap-2">
               <h3 className="font-bold mb-1 text-lg">HELP</h3>
@@ -33,10 +33,10 @@ export default function Footer() {
             </ul>
             <ul className="flex flex-col gap-2">
               <h3 className="font-bold mb-1 text-lg">COMPANY</h3>
-              <li>Our Story</li>
               <li>Blog</li>
               <li>Reviews</li>
               <li>Press</li>
+              <li>Careers</li>
               <li>Locations</li>
             </ul>
           </div>
