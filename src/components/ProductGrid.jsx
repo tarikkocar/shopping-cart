@@ -58,11 +58,51 @@ export default function ProductGrid({ collection }) {
       <div className="flex gap-16 justify-center">
         <div className="px-10 border-r-2 border-r-slate-300 text-slate-1000 max-[800px]:hidden">
           <ul className="flex flex-col gap-3">
-            <li>All Houseplants</li>
-            <li>Easy to Care</li>
-            <li>Pet-safe</li>
-            <li>Succulents</li>
-            <li>Palms</li>
+            <li
+              className={`hover:text-teal-700 transition-all ${
+                collection.slug === "all-houseplants"
+                  ? "underline underline-offset-4 decoration-teal-700 text-teal-700"
+                  : ""
+              }`}
+            >
+              <Link to="/all-houseplants">All Houseplants</Link>
+            </li>
+            <li
+              className={`hover:text-teal-700 transition-all ${
+                collection.slug === "easy-to-care"
+                  ? "underline underline-offset-4 decoration-teal-700 text-teal-700"
+                  : ""
+              }`}
+            >
+              <Link to="/easy-to-care">Easy to Care</Link>
+            </li>
+            <li
+              className={`hover:text-teal-700 transition-all ${
+                collection.slug === "pet-safe"
+                  ? "underline underline-offset-4 decoration-teal-700 text-teal-700"
+                  : ""
+              }`}
+            >
+              <Link to="/pet-safe">Pet-safe</Link>
+            </li>
+            <li
+              className={`hover:text-teal-700 transition-all ${
+                collection.slug === "succulents"
+                  ? "underline underline-offset-4 decoration-teal-700 text-teal-700"
+                  : ""
+              }`}
+            >
+              <Link to="/succulents">Succulents</Link>
+            </li>
+            <li
+              className={`hover:text-teal-700 transition-all ${
+                collection.slug === "palms"
+                  ? "underline underline-offset-4 decoration-teal-700 text-teal-700"
+                  : ""
+              }`}
+            >
+              <Link to="/palms">Palms</Link>
+            </li>
           </ul>
         </div>
         <motion.div

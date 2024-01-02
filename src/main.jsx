@@ -4,8 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
 import ListingPage from "./pages/ListingPage.jsx";
-import ProductDetails from "./components/ProductDetails.jsx";
 import ProductPage from "./pages/ProductPage.jsx";
+import CartPage from "./pages/CartPage.jsx";
 import collections from "./constants/collections.js";
 
 const router = createBrowserRouter([
@@ -15,19 +15,28 @@ const router = createBrowserRouter([
     children: [
       {
         path: "all-houseplants",
-        element: <ListingPage collections={collections} />,
+        element: (
+          <ListingPage key="all-houseplants" collections={collections} />
+        ),
       },
       {
         path: "easy-to-care",
-        element: <ListingPage collections={collections} />,
+        element: <ListingPage key="easy-to-care" collections={collections} />,
       },
-      { path: "pet-safe", element: <ListingPage collections={collections} /> },
+      {
+        path: "pet-safe",
+        element: <ListingPage key="pet-safe" collections={collections} />,
+      },
       {
         path: "succulents",
-        element: <ListingPage collections={collections} />,
+        element: <ListingPage key="succulents" collections={collections} />,
       },
-      { path: "palms", element: <ListingPage collections={collections} /> },
+      {
+        path: "palms",
+        element: <ListingPage key="palms" collections={collections} />,
+      },
       { path: ":id", element: <ProductPage /> },
+      { path: "cart", element: <CartPage /> },
     ],
   },
 ]);

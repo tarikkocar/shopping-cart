@@ -17,13 +17,13 @@ export default function ProductPage() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="px-32 w-full py-6 text-xs text-slate-800">
+      <div className="px-32 w-full py-6 text-xs text-slate-800 max-[600px]:px-10">
         <Link to="/" className="mr-2 underline underline-offset-2">
           HOME
         </Link>
         /
         <Link
-          to="../all-houseplants"
+          to="/all-houseplants"
           className="mr-2 ml-2 underline underline-offset-2"
         >
           ALL HOUSEPLANTS

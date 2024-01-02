@@ -11,6 +11,7 @@ export default function Footer() {
           <div className="flex justify-center gap-3 w-1/3 max-[1100px]:w-full">
             <input
               type="email"
+              id="email"
               placeholder="Enter your email"
               className="p-2 bg-slate-50 border border-slate-500 text-slate-900 text-sm rounded-lg focus:outline-0"
             />
@@ -25,19 +26,39 @@ export default function Footer() {
           <div className="w-full flex gap-16 max-[1100px]:justify-center">
             <ul className="flex flex-col gap-2">
               <h3 className="font-bold mb-1 text-lg">HELP</h3>
-              <li>Shipping</li>
-              <li>Returns & Refunds</li>
-              <li>FAQs</li>
-              <li>Terms & Conditions</li>
-              <li>Contact Us</li>
+              <li className="cursor-pointer hover:text-teal-700 transition-all">
+                Shipping
+              </li>
+              <li className="cursor-pointer hover:text-teal-700 transition-all">
+                Returns & Refunds
+              </li>
+              <li className="cursor-pointer hover:text-teal-700 transition-all">
+                FAQs
+              </li>
+              <li className="cursor-pointer hover:text-teal-700 transition-all">
+                Terms & Conditions
+              </li>
+              <li className="cursor-pointer hover:text-teal-700 transition-all">
+                Contact Us
+              </li>
             </ul>
             <ul className="flex flex-col gap-2">
               <h3 className="font-bold mb-1 text-lg">COMPANY</h3>
-              <li>Blog</li>
-              <li>Reviews</li>
-              <li>Press</li>
-              <li>Careers</li>
-              <li>Locations</li>
+              <li className="cursor-pointer hover:text-teal-700 transition-all">
+                Blog
+              </li>
+              <li className="cursor-pointer hover:text-teal-700 transition-all">
+                Reviews
+              </li>
+              <li className="cursor-pointer hover:text-teal-700 transition-all">
+                Press
+              </li>
+              <li className="cursor-pointer hover:text-teal-700 transition-all">
+                Careers
+              </li>
+              <li className="cursor-pointer hover:text-teal-700 transition-all">
+                Locations
+              </li>
             </ul>
           </div>
           <div className="w-1/2 flex flex-col gap-2 max-[1100px]:w-full max-[1100px]:mt-20 max-[1100px]:text-center">
