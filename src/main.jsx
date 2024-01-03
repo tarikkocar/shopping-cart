@@ -7,12 +7,17 @@ import ListingPage from "./pages/ListingPage.jsx";
 import ProductPage from "./pages/ProductPage.jsx";
 import CartPage from "./pages/CartPage.jsx";
 import collections from "./constants/collections.js";
+import HomePage from "./pages/HomePage.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        index: true,
+        element: <HomePage />,
+      },
       {
         path: "all-houseplants",
         element: (

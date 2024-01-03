@@ -37,11 +37,11 @@ export default function CartPage() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="p-20 flex flex-col gap-4 items-center">
-            <p className="text-2xl font-bold">Your Cart is Empty</p>
+          <div className="p-20 flex flex-col gap-4 items-center max-[600px]:p-10">
+            <p className="text-2xl font-bold text-center">Your Cart is Empty</p>
             <Link
               to="/all-houseplants"
-              className="text-lg underline underline-offset-4"
+              className="text-lg text-center underline underline-offset-4"
             >
               Continue Shopping
             </Link>

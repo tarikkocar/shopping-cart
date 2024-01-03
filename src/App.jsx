@@ -57,7 +57,7 @@ function App() {
     <ShopContext.Provider
       value={{ cartItems, addToCart, removeFromCart, changeQuantity }}
     >
-      <div className="flex flex-col items-center gap-2 w-full">
+      <div className="flex flex-col items-center w-full">
         <Header />
         <Outlet />
         <Footer />

@@ -28,7 +28,7 @@ export default function CartControls() {
           className="p-1 border-2 border-slate-400 rounded-lg text-sm focus:outline-0 focus:border-teal-800"
         />
         <button className="mt-2 p-2 border-2 border-teal-800 rounded-lg text-teal-50 bg-teal-800 hover:bg-teal-950 active:bg-teal-800 transition-all">
-          Checkout
+          CHECKOUT
         </button>
         <Link
           to="/all-houseplants"

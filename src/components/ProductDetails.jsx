@@ -1,9 +1,30 @@
 import { useContext, useState } from "react";
 import { ShopContext } from "../App";
+import { motion } from "framer-motion";
 
 export default function ProductDetails({ plant }) {
   const [quantity, setQuantity] = useState(1);
+  const [buttonContent, setButtonContent] = useState("ADD TO CART");
   const { addToCart } = useContext(ShopContext);
+
+  const handleAddToCart = () => {
+    addToCart(plant, quantity);
+
+    setButtonContent(
+      <motion.span
+        className="material-symbols-outlined flex justify-center items-center"
+        initial={{ y: "-100%" }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.4 }}
+      >
+        done
+      </motion.span>
+    );
+
+    setTimeout(() => {
+      setButtonContent("ADD TO CART");
+    }, 1000);
+  };
 
   return (
     <div className="p-8 pt-1 w-1/2 flex flex-col items-start gap-6 max-[800px]:w-full">
@@ -46,11 +67,10 @@ export default function ProductDetails({ plant }) {
       </div>
       <button
         className="mt-2 w-1/2 p-2 border-2 border-teal-800 rounded-lg text-teal-50 bg-teal-800 hover:bg-teal-950 active:bg-teal-800 transition-all"
-        onClick={() => {
-          addToCart(plant, quantity);
-        }}
+        onClick={handleAddToCart}
+        disabled={buttonContent !== "ADD TO CART"}
       >
-        ADD TO CART
+        {buttonContent}
       </button>
     </div>
   );

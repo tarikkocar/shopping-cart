@@ -18,7 +18,7 @@ export default function Header() {
           <motion.span
             key={isMenuOpen ? "close" : "menu"}
             className={`material-symbols-outlined scale-125 hidden w-fit cursor-pointer max-[800px]:block max-[600px]:scale-90 ${
-              isMenuOpen ? "fixed top-10 z-10" : ""
+              isMenuOpen ? "fixed top-10 z-30" : ""
             }`}
             onClick={() => {
               setIsMenuOpen(!isMenuOpen);
