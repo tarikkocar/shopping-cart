@@ -15,7 +15,7 @@ export default function ProductCard({ plant }) {
           onMouseEnter={handleMouseEvent}
           src={plant.img_1}
           alt={`${plant.title} image 1`}
-          className="aspect-square"
+          className="w-full aspect-square"
         />
       )}
       {isHovered && (
@@ -23,7 +23,7 @@ export default function ProductCard({ plant }) {
           onMouseLeave={handleMouseEvent}
           src={plant.img_2}
           alt={`${plant.title} image 2`}
-          className="aspect-square"
+          className="w-full aspect-square"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
