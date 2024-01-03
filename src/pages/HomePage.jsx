@@ -12,7 +12,7 @@ export default function HomePage() {
     >
       <div className="relative">
         <img
-          src="/assets/homepage_img.jpg"
+          src="/assets/homepage_img.webp"
           alt="Indoor houseplants"
           className="pb-10"
         />
@@ -37,7 +37,11 @@ export default function HomePage() {
               to={`/${collection.slug}`}
               className="w-1/4 flex flex-col items-center max-[1000px]:w-1/3"
             >
-              <img src={collection.img} alt="" />
+              <img
+                src={collection.img}
+                alt={`${collection.title} image`}
+                loading="lazy"
+              />
               <p className="mt-3 text-xl max-[1000px]:text-base max-[600px]:text-sm">
                 {collection.title}
               </p>
@@ -49,19 +53,31 @@ export default function HomePage() {
         <h2 className="text-2xl max-[600px]:text-lg">From Our Blog</h2>
         <div className="flex gap-8">
           <div className="w-1/3 flex flex-col items-center">
-            <img src="/assets/blog_1.jpg" alt="" />
+            <img
+              src="/assets/blog_1.webp"
+              alt="Blog post image 1"
+              loading="lazy"
+            />
             <p className="mt-3 text-xl max-[1000px]:text-base max-[600px]:text-sm">
               A Beginner's Guide to Houseplants
             </p>
           </div>
           <div className="w-1/3 flex flex-col items-center">
-            <img src="/assets/blog_2.jpg" alt="" />
+            <img
+              src="/assets/blog_2.webp"
+              alt="Blog post image 2"
+              loading="lazy"
+            />
             <p className="mt-3 text-xl max-[1000px]:text-base max-[600px]:text-sm">
               Exploring the Aesthetics of Houseplants
             </p>
           </div>
           <div className="w-1/3 flex flex-col items-center">
-            <img src="/assets/blog_3.jpg" alt="" />
+            <img
+              src="/assets/blog_3.webp"
+              alt="Blog post image 3"
+              loading="lazy"
+            />
             <p className="mt-3 text-xl max-[1000px]:text-base max-[600px]:text-sm">
               The Healing Power of Houseplants
             </p>

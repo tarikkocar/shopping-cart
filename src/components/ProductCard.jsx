@@ -16,6 +16,7 @@ export default function ProductCard({ plant }) {
           src={plant.img_1}
           alt={`${plant.title} image 1`}
           className="w-full aspect-square"
+          loading="lazy"
         />
       )}
       {isHovered && (
@@ -27,6 +28,7 @@ export default function ProductCard({ plant }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
+          loading="lazy"
         />
       )}
       <p className="mt-3 text-2xl text-teal-700">{plant.title}</p>
