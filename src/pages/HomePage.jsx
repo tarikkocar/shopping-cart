@@ -22,7 +22,7 @@ export default function HomePage() {
           </h1>
           <Link
             to="/all-houseplants"
-            className="p-2 text-lg text-teal-50 border-2 border-teal-50 rounded-lg hover:text-slate-900 hover:bg-teal-50 transition-all max-[1000px]:text-sm max-[600px]:text-xs"
+            className="px-4 py-2 text-lg text-teal-50 border-2 border-teal-50 rounded-lg hover:text-slate-900 hover:bg-teal-50 transition-all max-[1000px]:text-sm max-[600px]:text-xs"
           >
             Shop Houseplants
           </Link>
