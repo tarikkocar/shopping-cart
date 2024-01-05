@@ -20,7 +20,7 @@ const collections = [
     description:
       "Create a pet-friendly oasis with our selection of plants that are safe for your furry companions. These plants not only enhance your living space but also provide a safe and enriching environment for your pets.",
     slug: "pet-safe",
-    img: "/assets/haworthia_1.webp",
+    img: "/assets/snake_plant_1.webp",
     id: 2,
   },
   {
@@ -28,7 +28,7 @@ const collections = [
     description:
       "Explore the world of succulents, where captivating shapes and vibrant colors meet resilience. These water-wise wonders add a touch of desert charm to your collection, thriving in various conditions with minimal care.",
     slug: "succulents",
-    img: "/assets/snake_plant_1.webp",
+    img: "/assets/haworthia_1.webp",
     id: 3,
   },
   {

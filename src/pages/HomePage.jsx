@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import collections from "../constants/collections";
+import { useState } from "react";
 
 export default function HomePage() {
+  const [isImageLoading, setIsImageLoading] = useState(true);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -14,8 +16,16 @@ export default function HomePage() {
         <img
           src="/assets/homepage_img.webp"
           alt="Indoor houseplants"
-          className="pb-10"
+          className={`${isImageLoading ? "hidden" : "block"}`}
+          onLoad={() => {
+            setIsImageLoading(false);
+          }}
         />
+        <div
+          className={`aspect-[3/2] w-[98.99vw] h-auto ${
+            isImageLoading ? "block" : "hidden"
+          }`}
+        ></div>
         <div className="absolute bottom-1/2 w-full p-16 flex flex-col gap-6 items-end bg-teal-900 bg-opacity-80 max-[1000px]:p-6 max-[1000px]:gap-2 max-[600px]:p-4">
           <h1 className="text-4xl text-teal-50 max-[1000px]:text-xl max-[600px]:text-lg">
             Breathe Life into Your Space
