@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import ProductImages from "../components/ProductImages";
 import ProductDetails from "../components/ProductDetails";
 import { motion } from "framer-motion";
-import { useParams } from "react-router-dom";
 import plants from "../constants/plants";
 
 export default function ProductPage() {

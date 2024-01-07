@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ShopContext } from "../App";
+import { ShopContext } from "../context/ShopProvider";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import CartItem from "../components/CartItem";
@@ -32,7 +32,7 @@ export default function CartPage() {
       )}
       {cartItems.length === 0 && (
         <motion.div
-          className="w-4/5 max-w-[110rem] flex justify-center"
+          className="w-4/5 mb-auto max-w-[110rem] flex justify-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}

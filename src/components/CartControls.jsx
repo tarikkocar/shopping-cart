@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ShopContext } from "../App";
+import { ShopContext } from "../context/ShopProvider";
 import { Link } from "react-router-dom";
 
 export default function CartControls() {

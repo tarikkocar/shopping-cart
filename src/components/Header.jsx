@@ -1,8 +1,7 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { ShopContext } from "../App";
+import { ShopContext } from "../context/ShopProvider";
 import Menu from "./Menu";
 import SearchPanel from "./SearchPanel";
 

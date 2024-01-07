@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { ShopContext } from "../App";
+import { ShopContext } from "../context/ShopProvider";
 import { motion } from "framer-motion";
 
 export default function ProductDetails({ plant }) {

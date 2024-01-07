@@ -43,7 +43,7 @@ export default function ProductCard({ plant }) {
             transition={{ duration: 0.8 }}
           />
           <div
-            style={{ width: `${imageWidth}px` }}
+            style={{ width: `${imageWidth}px` }} // There's a problem with Tailwind's pixel widths so px width is enforced with inline styles
             className={`w-full w-[${imageWidth}px] h-auto aspect-square ${
               isImageLoading ? "block" : "hidden"
             }`}
