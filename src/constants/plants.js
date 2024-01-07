@@ -241,6 +241,17 @@ const plants = [
       "Chamaedorea elegans, the Parlor Palm, offers classic beauty with its arching fronds, thriving in low light and creating a timeless indoor retreat.",
     id: 21,
   },
+  {
+    title: "Sago Palm",
+    img_1: "/assets/sago_palm_1.webp",
+    img_2: "/assets/sago_palm_2.webp",
+    price: 43.99,
+    height: "120-140 cm",
+    collections: ["all-houseplants", "easy-to-care", "palms"],
+    description:
+      "A hardy and iconic ornamental plant, the Sago Palm (Cycas revoluta) boasts feathery, dark green fronds, adding a touch of tropical elegance to indoor and outdoor spaces.",
+    id: 22,
+  },
 ];
 
 export default plants;

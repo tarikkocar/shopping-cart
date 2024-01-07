@@ -10,7 +10,7 @@ export default function HomePage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col items-center"
+      className="flex flex-col items-center gap-4"
     >
       <div className="relative">
         <img
@@ -59,7 +59,7 @@ export default function HomePage() {
           ))}
         </div>
       </div>
-      <div className="flex flex-col gap-8 items-center py-6 px-20 mt-8 max-[1000px]:px-8 max-w-[110rem]">
+      <div className="flex flex-col gap-8 items-center py-6 px-20 max-[1000px]:px-8 max-w-[110rem]">
         <h2 className="text-2xl max-[600px]:text-lg">From Our Blog</h2>
         <div className="flex gap-8">
           <div className="w-1/3 flex flex-col items-center">
