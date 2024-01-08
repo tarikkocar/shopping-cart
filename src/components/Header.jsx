@@ -11,7 +11,7 @@ export default function Header() {
   const { cartItems } = useContext(ShopContext);
 
   return (
-    <div className="w-full h-36 flex flex-col justify-center items-center max-[800px]:h-24 max-[800px]:border-b-2 max-[800px]:border-b-teal-800 max-[600px]:h-16">
+    <div className="w-full h-32 flex flex-col justify-center items-center max-[800px]:h-24 max-[800px]:border-b-2 max-[800px]:border-b-teal-800 max-[600px]:h-16">
       <div className="w-full h-3/4 grid grid-cols-3 justify-center items-center">
         <div className="col-span-1 ml-10 max-[600px]:ml-4">
           <motion.span
@@ -60,7 +60,9 @@ export default function Header() {
           </Link>
         </div>
       </div>
-      <nav className="w-full p-5 h-1/4 bg-teal-800 text-sm text-teal-50 flex justify-center items-center max-[800px]:hidden">
+      <nav
+        className={`w-full p-5 h-1/4 bg-teal-800 text-sm text-teal-50 flex justify-center items-center max-[800px]:hidden`}
+      >
         <ul className="flex gap-8 justify-center items-center">
           <li className="hover:text-teal-200 transition-all">
             <Link to="easy-to-care">EASY TO CARE PLANTS</Link>

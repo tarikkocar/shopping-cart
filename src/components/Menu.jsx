@@ -7,7 +7,7 @@ export default function Menu({ isMenuOpen, setIsMenuOpen }) {
       {isMenuOpen && (
         <motion.div
           key="menu"
-          className="fixed inset-0 z-20 p-10 rounded-lg bg-teal-50 opacity-[97%] text-sm font-bold min-[800px]:hidden"
+          className="fixed inset-0 z-20 p-10 bg-teal-50 opacity-[97%] text-sm font-bold min-[800px]:hidden"
           initial={{ opacity: 0, x: "-100%" }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: "-100%" }}

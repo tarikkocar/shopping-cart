@@ -27,7 +27,7 @@ export default function SearchPanel({ isSearchOpen, setIsSearchOpen }) {
       {isSearchOpen && (
         <motion.div
           key="searchPanel"
-          className="fixed z-20 w-1/2 max-w-4xl right-0 bottom-0 top-0 p-10 rounded-lg bg-teal-50 opacity-[97%] text-sm font-bold max-[800px]:w-full"
+          className="fixed z-20 w-1/2 max-w-4xl right-0 bottom-0 top-0 p-10 bg-teal-50 opacity-[97%] text-sm font-bold max-[800px]:w-full"
           initial={{ opacity: 0, x: "200%" }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: "200%" }}

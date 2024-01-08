@@ -47,7 +47,12 @@ function ShopProvider({ children }) {
 
   return (
     <ShopContext.Provider
-      value={{ cartItems, addToCart, removeFromCart, changeQuantity }}
+      value={{
+        cartItems,
+        addToCart,
+        removeFromCart,
+        changeQuantity,
+      }}
     >
       {children}
     </ShopContext.Provider>
